@@ -1,0 +1,107 @@
+/* styles.css */
+
+/* Google Font inclusion */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #5D6D7E;
+    margin-bottom: 30px;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 0 auto;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    background-color: #2E86C1;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1A5276;
+}
+
+#receipt {
+    margin-top: 30px;
+    background-color: #D5DBDB;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+}
+
+h2 {
+    color: #2E4053;
+}
+
+p {
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+/* Styling form elements with focus state */
+input:focus, textarea:focus, select:focus {
+    border-color: #2980B9;
+    outline: none;
+}
+
+/* Pseudo-classes for input */
+input[type="text"]:invalid, input[type="email"]:invalid {
+    border-color: #E74C3C;
+}
+
+/* Rounded border for receipt box */
+#receipt {
+    border: 2px solid #ABB2B9;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* Mobile responsive design */
+@media (max-width: 600px) {
+    form {
+        width: 100%;
+    }
+}
